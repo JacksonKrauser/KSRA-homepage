@@ -1,0 +1,75 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e4d9;
+}
+
+#mainheader {
+    background-color: #1db3ee;
+}
+
+Main Menu
+
+nav {
+    height: 40rem;
+    width: 100%;
+    margin: 0 auto 20rem;
+}
+
+ADD HOVER FOR MENU ITEMS
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+nav>ul>li a {
+    display: block;
+    color:blue;
+    text-align: center;
+    padding: 10rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+Main Content
+h1, h2, h3, h4 {
+    display:flex;
+    background-color: rgb(28, 69, 83);
+    border:black;
+    margin:5rem;
+}
+
+p {
+    color:gray;
+    justify-content: flex-end;
+    display: flex;
+
+}
+
+
+
+footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem;
+        border: black;
+        padding:20px;
+        color:tan;
+    }
+
+
+footer > p {
+        margin: .5rem 0;
+        color:black;
+    }
+
