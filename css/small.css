@@ -1,55 +1,75 @@
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #e6e4d9;
+    background-color: #1db3ee;
 }
 
 #mainheader {
     background-color: #1db3ee;
+    margin:0.5rem;
+}
+img {background-color: none;
+    display:flex;
+
+}
+
+p{
+    text-decoration:none;
+    color:black;
 }
 
 Main Menu
-
-nav {
-    height: 40rem;
-    width: 100%;
-    margin: 0 auto 20rem;
-}
-
-ADD HOVER FOR MENU ITEMS
-nav>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Style the navigation menu */
+.topnav {
     overflow: hidden;
-    display:flex;
-    justify-content: flex-end;
-
-}
-
-nav>ul>li a {
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
     display: block;
-    color:blue;
-    text-align: center;
-    padding: 10rem;
-    font-weight: bold;
-    text-decoration: underline;
-}
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background:none;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
 
 
 
 Main Content
 h1, h2, h3, h4 {
     display:flex;
-    background-color: rgb(28, 69, 83);
+    background-color: rgb(107, 152, 172);
     border:black;
-    margin:5rem;
+    margin: 0.5rem;
 }
 
 p {
-    color:gray;
+    color:black;
     justify-content: flex-end;
     display: flex;
 
@@ -63,8 +83,8 @@ footer {
         align-items: center;
         margin: 1rem;
         border: black;
-        padding:20px;
-        color:tan;
+        padding:2rem;
+        color:rgb(140, 120, 212);
     }
 
 
