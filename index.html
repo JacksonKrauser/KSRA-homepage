@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content ="ie-edge">
 <meta name="viewport" content ="width=device-width, 
-initial-scake=1 maximum-scale=1">
+initial-scale=1 maximum-scale=1">
 
 <meta name ="description" content ="We referee soccer games in Louisville.">
 
@@ -16,7 +16,7 @@ initial-scake=1 maximum-scale=1">
 <link href="css/large.css" rel="stylsheet">
 
 <title>Kentucky Soccer Officials Association</title>
-<img src="KSRA Logo.png" alt="the official logo of Kentucky Soccer Officials Association">
+
 
 <header id="mainheader">
 <nav> 
@@ -27,23 +27,24 @@ initial-scake=1 maximum-scale=1">
        <div class="topnav">
         <div class="menuHeader">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+                &#9776;
+
           </a>
          <a href="#home" class="active">Main Menu </a> </div>
          <!-- Navigation links (hidden by default) -->
          <div id="myLinks">
-           <a href="#aboutus">AboutUs</a>
+           <a href="#aboutus">About Us</a>
            <a href="#newreferees">New Referees</a>
            <a href="#faqs">Frequently Asked Questions</a>
            <a href="#resources">Resources</a>
          </div>
          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        
+         <img class="logo" src="KSRA Logo.png" alt="the official logo of Kentucky Soccer Officials Association">
     </nav>
+
 </header>
 
 <body>
-
 <h1> About Us </h1>
 <p1> Kentucky Soccer Officials Association has served the Louisville community since 1983.  
     Our goal is to create a friendly, safe environment for our referees to grow on and off the field.
@@ -53,34 +54,46 @@ initial-scake=1 maximum-scale=1">
 
 
 <h2> New Referees </h2>
-<form name="myForm" action="/action_page.php" onsubmit="validateForm()" method="post">
+<p id="message" style="display:none"> </p>
+<form name="myForm">
     First Name: <input type="text" name="fname">
     Last Name: <input type="text" name="lname">
-    <input type="submit" value="Submit">
+    Email: <input type="text" name="email">
+    <button type="button" id="submit" onclick="validateForm()">Submit</button>
     </form>
 
 
 
 
 <h3> Frequently Asked Questions</h3>
+    <div class ="FAQ1">
     <p1> 
         How old do I have to be to become a referee?  US Soccer recommends a person be at least 12 years of age.
     </p1>
-        Question #2?  Answer.
-    <p2>   
+    </div>
+
+    <div class ="FAQ2">
+    <p2>
+        Question #2?  Answer.   
     </p2>
+    </div>
+
+    <div class ="FAQ3">
+    <p3>
         Question #3? Answer.
-    <p3>    
     </p3>
+    </div>
 
 
 <h4> Resources </h4>
+<div class ="resourceList">
     <ul>
     <li><a href = "https://learning.ussoccer.com/referee"> US Soccer Referee Page </a></li>
     <li><a href = "https://ussoccer.app.box.com/s/ruqcsf0671k1bcf6dzwf"> Referee Learning Resources </a> </li>
     <li><a href = "https://drive.google.com/drive/folders/1ZLQ6dyWKvN78otMubSHmplTBOnubmoC_?usp=sharing"> KSOA Meeting Minutes </a> </li>
     <li><a href = "Referee Podcast"> Referee Podcast </a> </li>
     </ul>
+    </div>
 
 <script src="utilis.js"></script>
 
@@ -89,9 +102,12 @@ initial-scake=1 maximum-scale=1">
 
 
 <footer> 
+    
     <p1>KSOA founded 1983</p1>
     <p2>Meeting Dates</p2>
     <p3>Meeting Minutes</p3> 
+    
+
 </footer>
 
 </html>

@@ -1,24 +1,34 @@
 function validateForm() {
-    let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-  }
+  let x = document.forms["myForm"]["email"].value;
+  let y = document.forms["myForm"]["fname"].value;
+  let z = document.forms["myForm"]["lname"].value;
+  if (x !== ""&& y !== "" && z !== "") {
+    document.getElementById("message").innerHTML="Success"
+    document.getElementById("message").style.display="Flex"
+    document.forms["myForm"]["email"].value="";
+    document.forms["myForm"]["fname"].value="";
+    document.forms["myForm"]["lname"].value="";
+    setTimeout(() => {
+      document.getElementById("message").style.display="none"
+    }, 5000);
 
-  function validateForm() {
-    let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-      alert("Thank you for submitting your interest");
-      return true;
-    }
-  }
+  } else {  
+    document.getElementById("message").innerHTML="Please complete the entire form."
+    document.getElementById("message").style.display="Flex"
+ 
+    setTimeout(() => {
+    document.getElementById("message").style.display="none" }, 5000);
+  } 
+}
 
 
 
-  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+
+
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
-    console.log("hello")
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";

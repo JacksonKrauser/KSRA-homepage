@@ -1,17 +1,20 @@
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
-    background-color: #1db3ee;
+    background-color: lightslategray;
 }
 
 #mainheader {
     background-color: #1db3ee;
     margin:0.5rem;
 }
-img {background-color: none;
-    display:flex;
-
+img.logo{
+    position:absolute;
+    top: 0.5em;
+    right: 0.5em;
+    height: 45px;
 }
+
 
 p{
     text-decoration:none;
@@ -53,11 +56,14 @@ Main Menu
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
     color: white;
   }
 
-
+ .menuHeader{
+  display:flex;
+  background-color: rgb(107, 152, 172);
+}
 
 
 Main Content
@@ -65,31 +71,62 @@ h1, h2, h3, h4 {
     display:flex;
     background-color: rgb(107, 152, 172);
     border:black;
-    margin: 0.5rem;
+    padding:0.2rem;
 }
 
 p {
     color:black;
     justify-content: flex-end;
     display: flex;
+    margin:0.5em;
 
 }
 
 
 
+form {
+  display: block;
+  background-color: aquamarine;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+input {
+  display:block;
+  /* margin:0.5em; */
+}
+
+#submit {background-color: #00000012;}
+
+.FAQ1,.FAQ2,.FAQ3 {
+  margin: 0.5em;
+  padding:0.2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#navcontainer a:hover
+{
+background-color: #369;
+color: #FFF;
+}
+
+
 footer {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 1rem;
+        flex-direction: column;
         border: black;
-        padding:2rem;
-        color:rgb(140, 120, 212);
+        padding:3rem;
+        color:black;
     }
 
 
 footer > p {
-        margin: .5rem 0;
+        display:flex;
+        flex-direction: column;
         color:black;
+        justify-content:space-evenly;
     }
 

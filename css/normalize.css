@@ -38,9 +38,12 @@
    */
   
   h1 {
-    font-size: 2em;
-    margin: 0.5rem 0;
-  }
+    display:flex;
+    background-color: rgb(107, 152, 172);
+    border:black;
+    padding:0.2rem;
+    font-style:normal;
+}
   
   /* Grouping content
      ========================================================================== */
@@ -162,10 +165,11 @@
   optgroup,
   select,
   textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
+    font-family: inherit; 
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0.5em; 
+    margin-left:0.5em;
   }
   
   /**
