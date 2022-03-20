@@ -1,0 +1,1 @@
+Kentucky Soccer Officials Association provides Louisville area referees the ability to build an online community for soccer referees.  There are a multitude of resources to help each referee grow their skills in the game we love.
