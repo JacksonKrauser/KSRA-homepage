@@ -1,98 +1,166 @@
-@media only screen and (min-width: 1024px) {
-    body {
-      font-family:Georgia, 'Times New Roman', Times, serif;
-      margin-top: 0rem;
-      background-color: #1db3ee;
+@media (min-width: 1024px) 
+  {
+  body {
+    display:grid;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0rem;
+    background-color:#1db3ee;
+    grid-template-columns: 30% 40% 30%;
   }
-  
-  #mainheader {
-      background-color: #1db3ee;
-      margin:0.5rem;
-  }
-  img {background-color: none;
-      display:flex;
-  
-  }
-  
-  p{
-      text-decoration:none;
-      color:black;
-  }
-  
-  Main Menu
-  /* Style the navigation menu */
-  .topnav {
-      overflow: hidden;
-      background-color: #333;
-      position: relative;
-    }
-    
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-      display: none;
-    }
-    
-    /* Style navigation menu links */
-    .topnav a {
-      color: white;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-    }
-    
-    /* Style the hamburger menu */
-    .topnav a.icon {
-      background:none;
-    }
-    
-    /* Add a grey background color on mouse-over */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    /* Style the active link (or home/logo) */
-    .active {
-      /* background-color: #04AA6D; */
-      color: white;
-    }
-  
-   .menuHeader{
+
+#mainheader {
+    display: grid;
+    background-color: #1db3ee;
+    margin:0.5rem;
+    grid-column: 1 / span 4;
+}
+
+img {
     display:flex;
-    background-color: green;
+}
+
+
+Main Menu
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
   }
   
-  
-  Main Content
-  h1, h2, h3, h4 {
-      display:flex;
-      background-color: rgb(107, 152, 172);
-      border:black;
-      margin: 0.5rem;
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
   }
   
-  p {
-      color:black;
-      justify-content: flex-end;
-      display: flex;
-  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
   }
   
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background:none;
+  }
   
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
   
+  /* Style the active link (or home/logo) */
+  .active {
+    /* background-color: #04AA6D; */
+    color: white;
+  }
+
+ .menuHeader{
+  grid-row: 1 / 1;
+  background-color: green;
+  }
+
+  h1,p {
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+  }
+
+  h2 {
+    display:grid;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding:0.2rem;
+
+  }
+
+  form {
+    display:grid;
+    grid-row-start:3;
+    grid-row-end:6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  h3 {
+    display:grid;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:3;
+    grid-column-end:4;
+  }
+
+  .FAQ1 {
+    display:grid;
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:3;
+    grid-column-end:4;
+    
+  }
+  
+  .FAQ2 {
+    display:grid;
+    grid-row-start:4;
+    grid-row-end:5;
+    grid-column-start:3;
+    grid-column-end:4;
+  }
+  
+  .FAQ3 {
+    display:grid;
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start: 3;
+    grid-column-end: 4 ;
+  }
+    
+  
+  h4 {
+    display:grid;
+    grid-row-start:7;
+    grid-row-end:8;
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+  
+  .resourceList {
+    display:grid;
+    grid-row-start:8;
+    grid-row-end:10;
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+  
+  ul {
+    margin-top:0px;
+    padding:0px;
+  }
+  
+ 
+
   footer {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          margin: 1rem;
-          border: black;
-          padding:2rem;
-          color:rgb(140, 120, 212);
-      }
-  
-  
+    display:grid;
+    grid-row-start:11;
+    grid-row-end:12;
+    grid-column-start:1;
+    grid-column-end:7;
+    background-color:white;  
+  }
+
   footer > p {
-          margin: .5rem 0;
-          color:black;
-         }}
+    display:grid;
+    align-items:center;
+    list-style-type: none;
+    }
+}
+
+
+

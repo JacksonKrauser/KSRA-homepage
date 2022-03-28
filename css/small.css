@@ -1,7 +1,9 @@
+
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
     background-color: lightslategray;
+    padding: 0.2em;
 }
 
 #mainheader {
@@ -78,11 +80,10 @@ p {
     color:black;
     justify-content: flex-end;
     display: flex;
-    margin:0.5em;
+    flex-wrap:wrap;
+    margin: 0.1em;
 
 }
-
-
 
 form {
   display: block;
@@ -93,13 +94,11 @@ form {
 
 input {
   display:block;
-  /* margin:0.5em; */
 }
 
 #submit {background-color: #00000012;}
 
 .FAQ1,.FAQ2,.FAQ3 {
-  margin: 0.5em;
   padding:0.2em;
 }
 
@@ -118,8 +117,9 @@ footer {
         display: flex;
         flex-direction: column;
         border: black;
-        padding:3rem;
+        padding:1em;
         color:black;
+        margin: 2em;
     }
 
 

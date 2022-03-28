@@ -38,7 +38,7 @@
    */
   
   h1 {
-    display:flex;
+    display:grid;
     background-color: rgb(107, 152, 172);
     border:black;
     padding:0.2rem;

@@ -1,23 +1,24 @@
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) 
+ {
   body {
+    display:grid;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
     background-color: #1db3ee;
+    grid-template-columns: 50% 50%;
 }
 
 #mainheader {
+    display: grid;
     background-color: #1db3ee;
     margin:0.5rem;
+    grid-column: 1 / span 2;
+    column-width: 2;
 }
 img {background-color: none;
     display:flex;
-
 }
 
-p{
-    text-decoration:none;
-    color:black;
-}
 
 Main Menu
 /* Style the navigation menu */
@@ -59,40 +60,96 @@ Main Menu
   }
 
  .menuHeader{
-  display:flex;
+  grid-row:1 / 1;
   background-color: green;
 }
 
+h1 + p {
+  display:grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
 
-Main Content
-h1, h2, h3, h4 {
-    display:flex;
-    background-color: rgb(107, 152, 172);
-    border:black;
-    margin: 0.5rem;
+h2 {
+  display:grid;
+  grid-row-start:2;
+  grid-row-end:3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+h3 {
+  display:grid;
+  grid-row-start:4;
+  grid-row-end:5;
+  grid-column-start:1;
+  grid-column-end:2;
+}
+
+.FAQ1 {
+  display:grid;
+  grid-row-start:5;
+  grid-row-end:6;
+  grid-column-start:1;
+  grid-column-end:2;
+  
+}
+
+.FAQ2 {
+  display:grid;
+  grid-row-start:6;
+  grid-row-end:7;
+  grid-column-start:1;
+  grid-column-end:2;
+}
+
+.FAQ3 {
+  display:grid;
+  grid-row-start:7;
+  grid-row-end:8;
+  grid-column-start:1;
+  grid-column-end:2;
+}
+  
+
+h4 {
+  display:grid;
+  grid-row-start:4;
+  grid-row-end:5;
+  grid-column-start:2;
+  grid-column-end:3;
+}
+
+.resourceList {
+  display:grid;
+  grid-row-start:5;
+  grid-row-end:6;
+  grid-column-start:2;
+  grid-column-end:3;
+}
+
+ul {
+  margin-top:0px;
+  padding:0px;
 }
 
 p {
-    color:black;
-    justify-content: flex-end;
-    display: flex;
-
+  display: grid;
+  grid-column: 1 / 4 span 1;
 }
 
-
-
 footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 1rem;
-        border: black;
-        padding:2rem;
-        color:rgb(140, 120, 212);
-    }
-
+  display:grid;
+  grid-row-start:8;
+  grid-column-start:1;
+  grid-column-end:3;
+  background-color:white;
+  
+}
 
 footer > p {
-        margin: .5rem 0;
-        color:black;
-}}
+  display:grid;
+  align-items:center;
+  list-style-type: none;
+  }
+}
