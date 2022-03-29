@@ -4,8 +4,8 @@
     display:grid;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
-    background-color:#1db3ee;
-    grid-template-columns: 30% 40% 30%;
+    background-color: lightgray;
+    grid-template-columns: 30% 35% 30%;
   }
 
 #mainheader {
@@ -64,6 +64,14 @@ Main Menu
   background-color: green;
   }
 
+  .menuHeader > ul > li  {
+    display:inline-block;
+    width: 20%;
+    color:white;
+    padding-right:2rem;
+    padding-left:2rem;
+  }
+
   h1,p {
     display:grid;
     grid-column-start: 1;
@@ -84,7 +92,7 @@ Main Menu
   form {
     display:grid;
     grid-row-start:3;
-    grid-row-end:6;
+    grid-row-end:11;
     grid-column-start: 2;
     grid-column-end: 3;
   }
@@ -134,7 +142,7 @@ Main Menu
   .resourceList {
     display:grid;
     grid-row-start:8;
-    grid-row-end:10;
+    grid-row-end:9;
     grid-column-start:1;
     grid-column-end:2;
   }
@@ -144,21 +152,21 @@ Main Menu
     padding:0px;
   }
   
- 
 
   footer {
-    display:grid;
-    grid-row-start:11;
-    grid-row-end:12;
-    grid-column-start:1;
-    grid-column-end:7;
-    background-color:white;  
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40px;   /* Height of the footer */
+    background:#6cf;
+   
   }
 
   footer > p {
-    display:grid;
-    align-items:center;
-    list-style-type: none;
+    display:flex;
+    color:black;
+    padding-left: 1rem;
+    padding-right: 1rem;
     }
 }
 

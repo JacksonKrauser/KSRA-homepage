@@ -2,12 +2,12 @@
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
-    background-color: lightslategray;
+    background-color: white;
     padding: 0.2em;
 }
 
 #mainheader {
-    background-color: #1db3ee;
+    background-color: lightblue;
     margin:0.5rem;
 }
 img.logo{
@@ -17,11 +17,15 @@ img.logo{
     height: 45px;
 }
 
+#message {
+  color:white;
+}
 
 p{
     text-decoration:none;
     color:black;
 }
+
 
 Main Menu
 /* Style the navigation menu */
@@ -62,9 +66,13 @@ Main Menu
     color: white;
   }
 
- .menuHeader{
+  .menuHeader{
   display:flex;
   background-color: rgb(107, 152, 172);
+}
+
+.menuHeader > ul > li{
+  display:none;
 }
 
 
@@ -87,9 +95,12 @@ p {
 
 form {
   display: block;
-  background-color: aquamarine;
+  background-color: lightblue;
   padding: 1em;
   margin: 0.5em;
+  border-radius: 10%;
+  outline:#333;
+  opacity:90%;
 }
 
 input {
@@ -106,27 +117,22 @@ ul {
     list-style-type: none;
 }
 
-#navcontainer a:hover
-{
-background-color: #369;
-color: #FFF;
-}
+#navcontainer a:hover{
+  background-color: #369;
+  color: #FFF;
+  }
 
 
 footer {
-        display: flex;
-        flex-direction: column;
-        border: black;
-        padding:1em;
-        color:black;
-        margin: 2em;
+  display:flex;
+  padding:1em;   
+  background:#6cf;
     }
 
 
 footer > p {
-        display:flex;
-        flex-direction: column;
-        color:black;
-        justify-content:space-evenly;
+  display:flex;
+  flex-direction: row;
+  color:black;
+  justify-content:space-evenly;
     }
-
