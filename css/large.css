@@ -1,6 +1,6 @@
-@media (min-width: 1024px) 
-  {
-  body {
+@media (min-width: 1024px) {
+
+body {
     display:grid;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
@@ -20,9 +20,43 @@ img {
 }
 
 
-Main Menu
+
+/*Main Menu*/
 /* Style the navigation menu */
+
+.navigation-desktop {
+  display:grid;
+  grid-column-start:0;
+  grid-column-end: 3;
+  width:100%;
+}
+
+.navigation-desktop > ul {
+  display:block;
+  grid-column-start: 0;
+  grid-column-end: 3;
+}
+
+.navigation-desktop > li {
+  float:left;
+}
+
+.navigation-desktop > li > a {
+  display: inline-block;
+  padding: 0.7rem 1rem;  
+}
+
+.navigation-desktop img {
+  display: block;
+  height:12%;
+}
+
+
+
+
+/* Hide Hamburger Menu */
 .topnav {
+    display:none;
     overflow: hidden;
     background-color: #333;
     position: relative;
@@ -35,6 +69,7 @@ Main Menu
   
   /* Style navigation menu links */
   .topnav a {
+    display:none;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,33 +79,30 @@ Main Menu
   
   /* Style the hamburger menu */
   .topnav a.icon {
+    display:none;
     background:none;
   }
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
+    display:none;
     background-color: #ddd;
     color: black;
   }
   
   /* Style the active link (or home/logo) */
   .active {
-    /* background-color: #04AA6D; */
+    display:none;
     color: white;
   }
 
  .menuHeader{
+  display:none;
   grid-row: 1 / 1;
   background-color: green;
   }
 
-  .menuHeader > ul > li  {
-    display:inline-block;
-    width: 20%;
-    color:white;
-    padding-right:2rem;
-    padding-left:2rem;
-  }
+ 
 
   h1,p {
     display:grid;

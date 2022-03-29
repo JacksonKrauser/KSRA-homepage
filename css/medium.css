@@ -10,7 +10,7 @@
 
 #mainheader {
     display: block;
-    background-color: #1db3ee;
+    background-color:lightblue;
     margin:0.5rem;
     grid-column: 1 / span 2;
     column-width: 2;
@@ -27,6 +27,13 @@ img {background-color: none;
     display:flex;
 }
 
+.navigation-desktip > li > a {
+  display: none;
+}
+
+.navigation-desktop img {
+  display: none;
+}
 
 Main Menu
 /* Style the navigation menu */
@@ -158,6 +165,8 @@ footer > p {
   align-items:center;
   list-style-type: none;
   color:#333;
+  padding-left: 0.7em;
+  padding-right:0.7em;
   }
 
 }

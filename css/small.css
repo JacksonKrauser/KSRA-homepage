@@ -14,20 +14,31 @@ img.logo{
     position:absolute;
     top: 0.5em;
     right: 0.5em;
-    height: 45px;
+    height: 80%;
 }
 
 #message {
   color:white;
 }
 
-p{
-    text-decoration:none;
-    color:black;
+
+ul {
+  list-style-type: none;
 }
 
+/*Main Menu */
+.navigation-desktip > li > a {
+  display: none;
+}
 
-Main Menu
+.navigation-desktop img {
+  display: none;
+}
+
+.navigation-desktop {
+  display:none;
+}
+
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
@@ -75,6 +86,11 @@ Main Menu
   display:none;
 }
 
+#navcontainer a:hover{
+  background-color: #369;
+  color: #FFF;
+  }
+
 
 Main Content
 h1, h2, h3, h4 {
@@ -113,14 +129,6 @@ input {
   padding:0.2em;
 }
 
-ul {
-    list-style-type: none;
-}
-
-#navcontainer a:hover{
-  background-color: #369;
-  color: #FFF;
-  }
 
 
 footer {
