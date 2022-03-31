@@ -4,7 +4,7 @@ body {
     display:grid;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 0rem;
-    background-color: lightgray;
+    background-color: white;
     grid-template-columns: 30% 35% 30%;
   }
 
@@ -31,27 +31,25 @@ img {
   width:100%;
 }
 
-.navigation-desktop > ul {
+.navigation-desktop ul {
   display:block;
-  grid-column-start: 0;
-  grid-column-end: 3;
-}
-
-.navigation-desktop > li {
   float:left;
 }
 
-.navigation-desktop > li > a {
+.navigation-desktop li {
+  float:left;
+}
+
+.navigation-desktop li a {
   display: inline-block;
-  padding: 0.7rem 1rem;  
+  padding: 0.4rem 4rem;
 }
 
 .navigation-desktop img {
   display: block;
-  height:12%;
+  height:6%;
+  margin:5px;
 }
-
-
 
 
 /* Hide Hamburger Menu */
@@ -194,13 +192,15 @@ img {
    
   }
 
-  footer > p {
+  footer p {
     display:flex;
     color:black;
     padding-left: 1rem;
     padding-right: 1rem;
     }
 }
+
+
 
 
 

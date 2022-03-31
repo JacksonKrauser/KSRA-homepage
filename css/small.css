@@ -14,11 +14,12 @@ img.logo{
     position:absolute;
     top: 0.5em;
     right: 0.5em;
-    height: 80%;
+    height: 35px;
 }
 
 #message {
-  color:white;
+  color:red;
+  position: relative;
 }
 
 
@@ -77,12 +78,12 @@ ul {
     color: white;
   }
 
-  .menuHeader{
+.menuHeader{
   display:flex;
   background-color: rgb(107, 152, 172);
 }
 
-.menuHeader > ul > li{
+.menuHeader ul li{
   display:none;
 }
 
@@ -95,9 +96,8 @@ ul {
 Main Content
 h1, h2, h3, h4 {
     display:flex;
-    background-color: rgb(107, 152, 172);
+    background-color: white;
     border:black;
-    padding:0.2rem;
 }
 
 p {
@@ -126,7 +126,7 @@ input {
 #submit {background-color: #00000012;}
 
 .FAQ1,.FAQ2,.FAQ3 {
-  padding:0.2em;
+  padding:0.1em;
 }
 
 
@@ -138,7 +138,7 @@ footer {
     }
 
 
-footer > p {
+footer p {
   display:flex;
   flex-direction: row;
   color:black;

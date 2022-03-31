@@ -13,7 +13,7 @@ function validateForm() {
     }, 5000);
 
   } else {  
-    document.getElementById("message").innerHTML="Please complete the entire form."
+    document.getElementById("message").innerHTML="Please complete the entire form." 
     document.getElementById("message").style.display="Flex"
  
     setTimeout(() => {

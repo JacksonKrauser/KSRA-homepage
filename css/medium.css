@@ -78,7 +78,7 @@ Main Menu
   background-color: lightseagreen;
 }
 
-h1 + p {
+h1 p {
   display:grid;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -126,21 +126,14 @@ h3 {
 }
   
 
-h4 {
+h4 .resourcelist {
   display:grid;
-  grid-row-start:4;
-  grid-row-end:5;
+  grid-row-start:6;
+  grid-row-end:7;
   grid-column-start:2;
   grid-column-end:3;
 }
 
-.resourceList {
-  display:grid;
-  grid-row-start:5;
-  grid-row-end:6;
-  grid-column-start:2;
-  grid-column-end:3;
-}
 
 ul {
   margin-top:0px;
@@ -152,6 +145,12 @@ p {
   grid-column: 1 / 4 span 1;
 }
 
+#message {
+  position: absolute;
+  top:17%;
+  left:52%;
+}
+
 footer {
   position:absolute;
   bottom:0;
@@ -160,7 +159,7 @@ footer {
   background:#6cf; 
 }
 
-footer > p {
+footer p {
   display:grid;
   align-items:center;
   list-style-type: none;
