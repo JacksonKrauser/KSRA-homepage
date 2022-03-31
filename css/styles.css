@@ -18,7 +18,6 @@ img.logo {
 
 #message {
   color: red;
-  position: relative;
 }
 
 ul {
@@ -290,7 +289,6 @@ footer p {
   }
 
   #message {
-    position: absolute;
     top: 17%;
     left: 52%;
   }
@@ -437,7 +435,6 @@ footer p {
   }
 
   #message {
-    position: absolute;
     top: 17%;
     left: 38%;
   }
